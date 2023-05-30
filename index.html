@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,328 @@
     <title>Facebook</title>
     <link rel="shortcut icon" href="./images/fb-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    
+
+    <div id="homeScreen">
+
+        <div class="navbarContainer">
+            <div class="leftNavbar">
+                <div class="FbLogoIcWrapper">
+                    <img src="./images/fb-favicon.png" alt="">
+                </div>
+                <div class="searchBarWrapper">
+                    <span class="sicon"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="text" placeholder="Search facebook" class="searchInput">
+                </div>
+
+            </div>
+
+            <div class="middleNavbar">
+                <div class="middleIconsContainer">
+                    <span class="middleContentIcons activeIcon"><i class="fa-solid fa-house"></i></span>
+                    <span class="middleContentIcons"><i class="fa-solid fa-user-group"></i></span>
+                    <span class="middleContentIcons"><i class="fa-solid fa-users"></i></span>
+                </div>
+            </div>
+
+            <div class="rightNavbar">
+                <span class="rightsideTxt">Find Friends</span>
+                <span class="rightsideicons"><i class="fa-solid fa-bars"></i></span>
+                <span class="rightsideicons"><i class="fa-brands fa-facebook-messenger"></i></span>
+                <span class="rightsideicons"><i class="fa-solid fa-bell"></i></span>
+                <span class="rightsideuserImage">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                        alt="">
+                </span>
+            </div>
+        </div>
+
+        <!-- <div class="mainContainer"> -->
+        <div class="mainContentContainer">
+            <div class="leftsideMenusWrapper">
+                <div class="sideNavWrapper">
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                                alt="">
+                        </div>
+                        <div class="sideNavName" id="switch">User</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="./images/finfFriends-removebg-preview.png" alt="">
+                        </div>
+                        <div class="sideNavName">Find Friends</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap welcomefb">
+                            <img src="./images/fb-favicon.png" alt="">
+                        </div>
+                        <div class="sideNavName ">Welcome</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="./images/saved-removebg-preview.png" alt="">
+                        </div>
+                        <div class="sideNavName">Saved</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yT/r/3dN1QwOLden.png" alt="">
+                        </div>
+                        <div class="sideNavName">feeds (most recent)</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="./images/groups-removebg-preview.png" alt="">
+                        </div>
+                        <div class="sideNavName">Groups</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="./images/marketplace-removebg-preview.png" alt="">
+                        </div>
+                        <div class="sideNavName">Marketplace</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="./images/watch-removebg-preview.png" alt="">
+                        </div>
+                        <div class="sideNavName">Watch</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="./images/memories-removebg-preview.png" alt="">
+                        </div>
+                        <div class="sideNavName">Memories</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="./images/pages-removebg-preview.png" alt="">
+                        </div>
+                        <div class="sideNavName">Pages</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/mruGO7HkgS-.png" alt="">
+                        </div>
+                        <div class="sideNavName">Events</div>
+                    </div>
+                    <div class="sideNavLinkWrap">
+                        <div class="sideNavImgwrap">
+                            <span class="sermorewrap"><i class="fa-solid fa-angle-down"></i></span>
+                        </div>
+                        <div class="sideNavName">See more</div>
+                    </div>
+
+                    <div id="logout"></div>
+                </div>
+            </div>
+
+            <div class="middleSidePostContainer">
+                <div class="leftPostContentWrap">
+                    <div class="storiesReelWrapper">
+                        <div class="topStoryReelHeadSection">
+                            <div class="storywarp ">
+                                <span class="strIcons "><i class="fa-solid fa-book-open"></i></span>
+                                <span class="strName">Stories</span>
+                            </div>
+                        </div>
+
+                        <div class="mainSTRContainer">
+                            <div class="storyContent"></div>
+                            <div class="storyContent"></div>
+                            <div class="storyContent"></div>
+                        </div>
+                    </div>
+
+                    <div class="whatInmindwrapper">
+                        <div class="whatTopSection">
+                            <div class="whimagwrapper">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                                    alt="">
+                            </div>
+                            <div class="whatInMindinputWrap">
+                                <input class="whnInput" type="text" name="" id="" placeholder="What's on your mind?">
+                            </div>
+                        </div>
+                        <hr class="whMHrline">
+                        <div class="WIMBottomsection">
+                            <div class="WHmIContentWrap">
+                                <div class="WHMImgConatiner">
+                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yF/r/v1iF2605Cb5.png" alt="">
+                                </div>
+                                <span class="WHMTxtName">Live Video</span>
+                            </div>
+                            <div class="WHmIContentWrap">
+                                <div class="WHMImgConatiner">
+                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png" alt="">
+                                </div>
+                                <span class="WHMTxtName">Photo/video</span>
+                            </div>
+                            <div class="WHmIContentWrap">
+                                <div class="WHMImgConatiner">
+                                    <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yk/r/yMDS19UDsWe.png" alt="">
+                                </div>
+                                <span class="WHMTxtName">Feeling/activity</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="PostSectionContainer">
+                        <div class="postHederSection">
+                            <div class="UserpfImageWrap">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                                    alt="">
+                            </div>
+                            <div class="UserPostnameHrWrap">
+                                <div class="userPostname">User 1</div>
+                                <div class="PostHr">2 d</div>
+                            </div>
+                            <div class="rightUPostOptions">
+                                <span><i class="fa-solid fa-ellipsis"></i></span>
+                                <span><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="mainPostWraper">
+                            <div class="MainPostImageWrap">
+                                <img src="https://images.unsplash.com/photo-1546587348-d12660c30c50?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8bmF0dXJhbHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80" alt="">
+                            </div>
+                        </div>
+                        <hr class="MainPostHrLine">
+                        <div class="LikeCommSharWrapper">
+                            <div class="LCSWrapper">
+                                <span class="LCSIcons"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <div class="LCSText">Like</div>
+                            </div>
+                            <div class="LCSWrapper">
+                                <span class="LCSIcons"><i class="fa-regular fa-message"></i></span>
+                                <div class="LCSText">Comment</div>
+                            </div>
+                            <div class="LCSWrapper">
+                                <span class="LCSIcons"><i class="fa-regular fa-share-from-square"></i></span>
+                                <div class="LCSText">Share</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="PostSectionContainer">
+                        <div class="postHederSection">
+                            <div class="UserpfImageWrap">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                                    alt="">
+                            </div>
+                            <div class="UserPostnameHrWrap">
+                                <div class="userPostname">User 2</div>
+                                <div class="PostHr">2 d</div>
+                            </div>
+                            <div class="rightUPostOptions">
+                                <span><i class="fa-solid fa-ellipsis"></i></span>
+                                <span><i class="fa-solid fa-xmark"></i></span>
+                            </div>
+                        </div>
+                        <div class="mainPostWraper">
+                            <div class="MainPostImageWrap">
+                                <img src="https://e0.pxfuel.com/wallpapers/794/332/desktop-wallpaper-latest-nature-2017-real-nature.jpg" alt="">
+                            </div>
+                        </div>
+                        <hr class="MainPostHrLine">
+                        <div class="LikeCommSharWrapper">
+                            <div class="LCSWrapper">
+                                <span class="LCSIcons"><i class="fa-regular fa-thumbs-up"></i></span>
+                                <div class="LCSText">Like</div>
+                            </div>
+                            <div class="LCSWrapper">
+                                <span class="LCSIcons"><i class="fa-regular fa-message"></i></span>
+                                <div class="LCSText">Comment</div>
+                            </div>
+                            <div class="LCSWrapper">
+                                <span class="LCSIcons"><i class="fa-regular fa-share-from-square"></i></span>
+                                <div class="LCSText">Share</div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rightSideContentWrapper">
+                <div class="rightContactWrap">
+                    <div class="rightMenusectionWrap">
+                        <div class="leftRmenuWrap">
+                            <span class="rmenus">Contacts</span>
+                        </div>
+                        <div class="rightRMenuWrap">
+                            <span class="rmenus"><i class="fa-solid fa-video"></i></span>
+                            <span class="rmenus"><i class="fa-solid fa-magnifying-glass"></i></span>
+                            <span class="rmenus"><i class="fa-solid fa-ellipsis"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="rightUsersContainer">
+                        <div class="userProfileContainer">
+                            <div class="userpImagWrap">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                                    alt="">
+                            </div>
+                            <div class="userpname"> User 1</div>
+                        </div>
+                        <div class="userProfileContainer">
+                            <div class="userpImagWrap">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                                    alt="">
+                            </div>
+                            <div class="userpname"> User 2</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <!-- <img src="./images/logoutimg-removebg-preview.png" alt=""> -->
+    </div>
+
+    <script>
+          window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("faceBookCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                var button = ' <div class="sideNavLinkWrap"><div class="sideNavImgwrap"><img src="./images/logoutimg-removebg-preview.png" alt=""></div><div  class="sideNavName" onclick="logout()">Logout</div> </div>'
+                var name = `<h1  class="sideNavName">${currentUser.userName}</h1>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+            }
+            //  else {
+            //     alert("current user absent")
+            // }
+
+        }
+        function logout() {
+            alert("Logout successful.")
+            localStorage.removeItem("faceBookCurrentUser")
+            window.location.reload()
+            window.location.href='./login.html'
+        }
+    </script>
+    </script>
+
+    <script src="./main.js"></script>
 </body>
+
 </html>

@@ -171,6 +171,7 @@ html {
 .loginbody {
     background-color: #f0f2f5;
 }
+
 .loginFormContainer {
     width: 80%;
     margin: 7rem auto 0 auto;
@@ -179,6 +180,7 @@ html {
     justify-content: space-around;
     align-items: center;
 }
+
 .leftSideWrap {
     width: 55%;
     /* border: .1rem solid blue; */
@@ -287,3 +289,478 @@ html {
     box-shadow: rgba(31, 163, 250, 0.427) 0rem .1rem .20rem;
 
 }
+
+
+
+/* Home page----------- */
+
+.navbarContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: .2rem solid red; */
+    padding: .8rem 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    position: fixed;
+    top: 0;
+    background-color: white;
+}
+
+.leftNavbar {
+    width: 24%;
+    /* border: .1rem solid blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 .8rem;
+}
+
+.middleNavbar {
+    width: 38%;
+    /* border: .1rem solid palegreen; */
+
+}
+
+.rightNavbar {
+    width: 28%;
+    /* border: .1rem solid purple; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 .8rem;
+}
+
+.FbLogoIcWrapper {
+    width: 15%;
+}
+
+.FbLogoIcWrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.searchBarWrapper {
+    width: 75%;
+    /* border: .1rem solid peru; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f0f2f5;
+    padding: 1rem;
+    border-radius: 2rem;
+}
+
+.sicon {
+    width: 10%;
+    font-size: 1.4rem;
+    color: gray;
+}
+
+.searchInput {
+    width: 88%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.4rem;
+
+}
+
+.middleContentIcons {
+    font-size: 2.2rem;
+    color: gray;
+    cursor: pointer;
+}
+
+.middleIconsContainer {
+    /* border: .1rem solid navy; */
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rightsideTxt {
+    font-size: 1.6rem;
+    padding: 1rem;
+    border-radius: 1.8rem;
+    background-color: #f0f2f5;
+}
+
+.rightsideicons {
+    font-size: 1.6rem;
+    padding: 1rem 1.3rem;
+    border-radius: 100%;
+    background-color: #f0f2f5;
+    cursor: pointer;
+}
+
+.rightsideuserImage {
+    width: 12%;
+}
+
+.rightsideuserImage img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: .1rem solid lightgray;
+
+}
+
+.activeIcon {
+    color: #1877f2;
+}
+
+
+/* main content------------------------------- */
+
+.mainContentContainer {
+    /* border: .1rem solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    background-color: #f0f2f5;
+    margin-top: 5%;
+    padding: 1rem 1.6rem;
+}
+
+.leftsideMenusWrapper {
+    width: 20%;
+    /* border: .1rem solid rgb(0, 255, 110); */
+    position: fixed;
+    left: 0;
+    background-color: transparent;
+    padding: 1rem 1.8rem;
+
+}
+.middleSidePostContainer{
+    /* border: .2rem solid black; */
+    width: 48%;
+    margin-left: 25%;
+    padding: 1rem 2rem;
+}
+.rightSideContentWrapper {
+    width: 25%;
+    /* border: .1rem solid rgb(0, 191, 255); */
+    position: fixed;
+    right: 0;
+}
+
+.leftPostContentWrap {
+    /* border: .1rem solid rgb(255, 0, 162); */
+    padding: 0 2rem;
+}
+
+.rightContactWrap {
+    /* border: .1rem solid peru; */
+    padding: 1.4rem 1.5rem;
+}
+
+.sideNavLinkWrap {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+    cursor: pointer;
+}
+
+.sideNavImgwrap {
+    width: 12%;
+}
+
+.sideNavImgwrap img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+
+.sideNavName {
+    font-size: 1.5rem;
+    font-weight: 550;
+    letter-spacing: .01rem;
+}
+
+.welcomefb {
+    padding: .2rem;
+}
+
+.sermorewrap {
+    background-color: rgb(224, 224, 224);
+    text-align: center;
+    padding: .5rem .7rem;
+    font-size: 1.4rem;
+    border-radius: 100%;
+}
+
+.storiesReelWrapper {
+    /* border: .1rem solid palegreen; */
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .8rem;
+}
+
+.topStoryReelHeadSection {
+    border-bottom: .1rem solid lightgray;
+    padding: 1.4rem;
+}
+
+.storywarp {
+    display: flex;
+    align-items: center;
+    font-size: 1.6rem;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+.strIcons {
+    font-size: 1.8rem;
+    color: #1877f2;
+}
+
+.strName {
+    font-weight: 550;
+    color: #1877f2;
+
+}
+
+.mainSTRContainer {
+    padding: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.storyContent {
+    width: 23%;
+    border: .1rem solid lightgray;
+    border-radius: .5rem;
+    height: 16rem;
+}
+
+.whatInmindwrapper {
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .8rem;
+    margin-top: 2rem;
+
+}
+
+.whatTopSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.whimagwrapper {
+    width: 9%;
+
+}
+
+.whimagwrapper img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: .1rem solid lightgray;
+}
+
+.whatInMindinputWrap {
+    width: 88%;
+
+}
+
+.whnInput {
+    border: none;
+    outline: none;
+    background-color: #f0f2f5;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    width: 100%;
+    font-size: 1.6rem;
+}
+
+.whMHrline {
+    border: .1rem solid lightgray;
+    margin: 1rem 0;
+}
+
+.WIMBottomsection {
+    /* border: .1rem solid red; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .5rem 0;
+}
+
+.WHmIContentWrap {
+    width: 28%;
+    display: flex;
+    align-items: center;
+    /* border: .1rem solid rgb(164, 112, 216); */
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.WHMImgConatiner {
+    width: 15%;
+}
+
+.WHMImgConatiner img {
+    width: 100%;
+    height: 100%;
+}
+
+.WHMTxtName {
+    width: 80%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: gray;
+
+}
+.PostSectionContainer{
+    padding: 1.5rem;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: .8rem;
+    margin-top: 2rem;
+}
+.postHederSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.UserpfImageWrap{
+    width: 9%;
+}
+.UserpfImageWrap img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: .1rem solid lightgray;
+}
+.UserPostnameHrWrap{
+    width: 72%;
+}
+.userPostname{
+    font-size: 1.6rem;
+    font-weight: 550;
+}
+.PostHr{
+    font-size: 1.4rem;
+    color: gray;
+}
+.rightUPostOptions{
+    width: 12%;
+    font-size: 2.2rem;
+    color: gray;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rightMenusectionWrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+}
+.rightRMenuWrap{
+    width: 35%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: .1rem solid blueviolet; */
+}
+.rmenus{
+    font-weight: 550;
+}
+.rightUsersContainer{
+    /* border: .1rem solid red; */
+    margin-top: 1.4rem;
+    font-size: 1.4rem;
+}
+.userProfileContainer{
+    width: 100%;
+    /* border: .1rem solid lawngreen; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.userpImagWrap{
+    width: 12%;
+}
+.userpImagWrap img{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    border: .1rem solid lightgray;
+}
+.userpname{
+    width: 85%;
+    font-weight: 550;
+}
+.mainPostWraper{
+    width: 100%;
+    border: .1rem solid lightgray;
+    margin: 1rem 0;
+}
+.MainPostImageWrap{
+    width: 100%;
+}
+.MainPostImageWrap img{
+    width: 100%;
+    height: 100%;
+}
+.MainPostHrLine{
+    border: .1rem solid lightgray;
+    margin: 1rem 0;
+}
+.LikeCommSharWrapper{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.LCSWrapper{
+    /* border: .1rem solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 26%;
+    gap: 1.5rem;
+}
+.LCSText{
+    width: 80%;
+    font-size: 1.5rem;
+    color: grey;
+    font-weight: 550;
+}
+.LCSIcons{
+    width: 15%;
+    font-size: 2rem;
+    color: gray;
+}
+#logout{
+    display: flex;
+    gap: 1.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

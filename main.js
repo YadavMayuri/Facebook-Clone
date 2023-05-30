@@ -70,7 +70,7 @@ function login(event) {
     }
     if (flag == true) {
         localStorage.setItem("faceBookCurrentUser", JSON.stringify(currentUser))
-        window.location.href='./home.html';
+        window.location.href='./index.html';
         alert("login successfull")
     }
     else {
