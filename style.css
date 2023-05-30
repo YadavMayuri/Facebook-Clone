@@ -1,61 +1,73 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: SFProDisplay-Bold, Helvetica, Arial, sans-serif;
 }
-html{
+
+html {
     font-size: 62.5%;
 }
 
 /* registration form */
 
-.regbody{
-    background-color: rgb(250, 250, 250);
-
+.regbody {
+    /* background-color: rgb(250, 250, 250); */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0.855), rgba(255, 255, 255, 0.855)), url(./images/login-background.png);
+    background-size: cover;
 }
-.regFormContainer{
+
+.regFormContainer {
     width: 32%;
     margin: 2.2rem auto;
     border-radius: .6rem;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: white;
 }
-.regHeaderContainer{
+
+.regHeaderContainer {
     padding: 1rem 2rem;
     width: 100%;
 }
-.regTitleWrapper{
+
+.regTitleWrapper {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.regTitle{
+
+.regTitle {
     font-size: 3rem;
     font-weight: 600;
 }
-.regClose{
+
+.regClose {
     font-size: 2.4rem;
     color: gray;
     cursor: pointer;
 }
-.regHrLine{
+
+.regHrLine {
     border: .1rem solid lightgray;
 }
-.regSubtitle{
+
+.regSubtitle {
     font-size: 1.6rem;
     color: gray;
     margin-top: .4rem;
 }
-.regmainsectionContainer{
+
+.regmainsectionContainer {
     width: 100%;
     padding: 2rem;
 }
-.regMainFormWrap{
+
+.regMainFormWrap {
     width: 100%;
 }
-.RegInput{
+
+.RegInput {
     width: 100%;
     padding: 1rem;
     margin-bottom: 1.4rem;
@@ -65,19 +77,23 @@ html{
     font-size: 1.4rem;
     background-color: #f5f6f7;
 }
-.regFP{
+
+.regFP {
     font-size: 1.1rem;
     color: gray;
     margin-top: 1.2rem;
 }
-.RegLinks{
+
+.RegLinks {
     color: #385898;
     cursor: pointer;
 }
-.RegLinks:hover{
+
+.RegLinks:hover {
     border-bottom: .1rem solid #385898;
 }
-.regSignUpBtn{
+
+.regSignUpBtn {
     display: block;
     margin: auto;
     border: none;
@@ -91,44 +107,51 @@ html{
     border-radius: .6rem;
     margin-top: 1rem;
 }
-.BirhWrapper{
+
+.BirhWrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: .4rem;
     margin-bottom: 1.4rem;
 }
-.bdateOpt{
+
+.bdateOpt {
     width: 30%;
-    padding: .6rem ;
+    padding: .6rem;
     border: .1rem solid lightgray;
     outline: none;
     border-radius: .5rem;
 }
-.regMonthWrapper{
+
+.regMonthWrapper {
     width: 30%;
-    padding: .6rem ;
+    padding: .6rem;
     border: .1rem solid lightgray;
     outline: none;
     border-radius: .5rem;
 }
-.regYearWrapper{
+
+.regYearWrapper {
     width: 30%;
-    padding: .6rem ;
+    padding: .6rem;
     border: .1rem solid lightgray;
     outline: none;
     border-radius: .5rem;
 }
-.rehFHead{
+
+.rehFHead {
     font-size: 1.2rem;
     color: gray;
 }
-.regGWrap{
+
+.regGWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.gwrap{
+
+.gwrap {
     width: 30%;
     display: flex;
     justify-content: space-between;
@@ -138,18 +161,19 @@ html{
     font-size: 1.4rem;
     color: #1c1e21;
 }
-.gwrap input{
+
+.gwrap input {
     accent-color: #1877f2;
 }
 
 
 /* login form */
-.loginbody{
+.loginbody {
     background-color: #f0f2f5;
 
 }
 
-.loginFormContainer{
+.loginFormContainer {
     width: 80%;
     margin: 7rem auto 0 auto;
     /* border: .1rem solid red; */
@@ -157,34 +181,44 @@ html{
     justify-content: space-around;
     align-items: center;
 }
-.leftSideWrap{
+
+.leftSideWrap {
     width: 55%;
     /* border: .1rem solid blue; */
-    padding: 1rem 2rem 0 2rem;
+    padding: 0 4rem 0 0;
 
 }
-.LoginFBTitle{
-    font-size: 5rem;
-    font-weight: 800;
-    color: #1877f2;
+
+.loginFbImagwrap {
+    width: 45%;
 }
-.loginSuctitle{
-    font-size: 2.6rem;
-    margin-top: 1rem;
+
+.loginFbImagwrap img {
+    width: 100%;
+    height: 100%;
 }
-.rightsideWrap{
+
+.loginSuctitle {
+    font-size: 2.7rem;
+    margin-top: 1.5rem;
+    letter-spacing: .04rem;
+}
+
+.rightsideWrap {
     width: 42%;
     /* border: .1rem solid green; */
-    padding: 10rem 2rem 0 2rem;
+    padding: 8rem 2rem 0 2rem;
 }
-.loginMainForm{
+
+.loginMainForm {
     width: 100%;
     border-radius: .6rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0rem .3rem .8rem;
     background-color: white;
     padding: 2rem 2rem 2rem 2rem;
 }
-.loginInput{
+
+.loginInput {
     width: 100%;
     padding: 1rem 2rem;
     border: .1rem solid lightgray;
@@ -193,7 +227,8 @@ html{
     border-radius: .5rem;
     margin-bottom: 1.4rem;
 }
-.loginBtn{
+
+.loginBtn {
     width: 100%;
     background-color: #1877f2;
     border: none;
@@ -201,17 +236,19 @@ html{
     border-radius: .5rem;
     cursor: pointer;
     padding: 1rem;
-    font-size: 2rem ;
+    font-size: 2rem;
     font-weight: 600;
     color: white;
 }
-.forgetpassword{
+
+.forgetpassword {
     font-size: 1.4rem;
     margin: 1.4rem;
     color: #1877f2;
     text-align: center;
 }
-.createAcBtn{
+
+.createAcBtn {
     display: block;
     margin: auto;
     padding: 1rem 3rem;
@@ -226,29 +263,30 @@ html{
     cursor: pointer;
     margin-bottom: 1rem;
 }
-.FormBLine{
+
+.FormBLine {
     font-size: 1.4rem;
     text-align: center;
     margin-top: 2.5rem;
 }
-.loginHighlightTxt{
+
+.loginHighlightTxt {
     font-weight: 550;
     cursor: pointer;
 }
-.loginHighlightTxt:hover{
+
+.loginHighlightTxt:hover {
     border-bottom: .1rem solid black;
 }
 
+.loginMainForm input[type=email]:focus {
+    border: .1rem solid #1877f2;
+    box-shadow: rgba(31, 163, 250, 0.427) 0rem .1rem .20rem;
 
+}
 
+.loginMainForm input[type=password]:focus {
+    border: .1rem solid #1877f2;
+    box-shadow: rgba(31, 163, 250, 0.427) 0rem .1rem .20rem;
 
-
-
-
-
-
-
-
-
-
-
+}
