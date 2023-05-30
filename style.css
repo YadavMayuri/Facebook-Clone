@@ -12,7 +12,6 @@ html {
 /* registration form */
 
 .regbody {
-    /* background-color: rgb(250, 250, 250); */
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0.855), rgba(255, 255, 255, 0.855)), url(./images/login-background.png);
     background-size: cover;
 }
@@ -21,7 +20,7 @@ html {
     width: 32%;
     margin: 2.2rem auto;
     border-radius: .6rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: rgba(0, 0, 0, 0.40) 0rem .3rem .8rem;
     background-color: white;
 }
 
@@ -168,11 +167,10 @@ html {
 
 
 /* login form */
+
 .loginbody {
     background-color: #f0f2f5;
-
 }
-
 .loginFormContainer {
     width: 80%;
     margin: 7rem auto 0 auto;
@@ -181,7 +179,6 @@ html {
     justify-content: space-around;
     align-items: center;
 }
-
 .leftSideWrap {
     width: 55%;
     /* border: .1rem solid blue; */
@@ -213,7 +210,7 @@ html {
 .loginMainForm {
     width: 100%;
     border-radius: .6rem;
-    box-shadow: rgba(0, 0, 0, 0.24) 0rem .3rem .8rem;
+    box-shadow: rgba(0, 0, 0, 0.40) 0rem .3rem .8rem;
     background-color: white;
     padding: 2rem 2rem 2rem 2rem;
 }
