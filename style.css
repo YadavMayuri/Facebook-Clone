@@ -624,13 +624,14 @@ html {
 
 }
 .PostSectionContainer{
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .8rem;
     margin-top: 2rem;
 }
 .postHederSection{
+    padding: 1rem 1.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -705,10 +706,16 @@ html {
     width: 85%;
     font-weight: 550;
 }
+.HomeMainPostDesc{
+    padding: 1rem 1.4rem;
+}
+.HPostDecs{
+    font-size: 1.4rem;
+}
 .mainPostWraper{
     width: 100%;
-    border: .1rem solid lightgray;
-    margin: 1rem 0;
+    /* border: .1rem solid lightgray; */
+    margin: .5rem 0;
 }
 .MainPostImageWrap{
     width: 100%;
@@ -719,7 +726,7 @@ html {
 }
 .MainPostHrLine{
     border: .1rem solid lightgray;
-    margin: 1rem 0;
+    /* margin: 1rem 0; */
 }
 .LikeCommSharWrapper{
     width: 80%;
@@ -727,14 +734,13 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    padding: 1.4rem 1.4rem;
 }
 .LCSWrapper{
     /* border: .1rem solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 26%;
     gap: 1.5rem;
 }
 .LCSText{
