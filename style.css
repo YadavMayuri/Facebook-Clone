@@ -461,11 +461,14 @@ html {
 .sideNavLinkWrap {
     display: flex;
     align-items: center;
-    gap: 1rem;
-    margin-bottom: 1.4rem;
+    gap: 1.4rem;
     cursor: pointer;
+    padding: .8rem;
+    border-radius: 1rem;
 }
-
+.sideNavLinkWrap:hover{
+    background-color: rgba(224, 224, 224, 0.914);
+}
 .sideNavImgwrap {
     width: 12%;
 }
