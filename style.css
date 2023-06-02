@@ -386,14 +386,24 @@ html {
     padding: 1rem;
     border-radius: 1.8rem;
     background-color: #f0f2f5;
+    cursor: pointer;
+}
+
+.rightsideTxt:hover {
+    background-color: #e1e3e7;
 }
 
 .rightsideicons {
-    font-size: 1.6rem;
-    padding: 1rem 1.3rem;
+    font-size: 2rem;
+    padding: .8rem 1.2rem;
     border-radius: 100%;
     background-color: #f0f2f5;
     cursor: pointer;
+}
+
+.rightsideicons:hover {
+    background-color: #e1e3e7;
+
 }
 
 .rightsideuserImage {
@@ -405,7 +415,7 @@ html {
     height: 100%;
     border-radius: 100%;
     border: .1rem solid lightgray;
-
+    cursor: pointer;
 }
 
 .activeIcon {
@@ -435,12 +445,14 @@ html {
     padding: 1rem 1.8rem;
 
 }
-.middleSidePostContainer{
+
+.middleSidePostContainer {
     /* border: .2rem solid black; */
     width: 48%;
     margin-left: 25%;
     padding: 1rem 2rem;
 }
+
 .rightSideContentWrapper {
     width: 25%;
     /* border: .1rem solid rgb(0, 191, 255); */
@@ -466,9 +478,11 @@ html {
     padding: .8rem;
     border-radius: 1rem;
 }
-.sideNavLinkWrap:hover{
+
+.sideNavLinkWrap:hover {
     background-color: rgba(224, 224, 224, 0.914);
 }
+
 .sideNavImgwrap {
     width: 12%;
 }
@@ -623,23 +637,27 @@ html {
     color: gray;
 
 }
-.PostSectionContainer{
+
+.PostSectionContainer {
     /* padding: 1.5rem; */
     background-color: white;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: .8rem;
     margin-top: 2rem;
 }
-.postHederSection{
+
+.postHederSection {
     padding: 1rem 1.4rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.UserpfImageWrap{
+
+.UserpfImageWrap {
     width: 9%;
 }
-.UserpfImageWrap img{
+
+.UserpfImageWrap img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
@@ -648,20 +666,24 @@ html {
     object-fit: cover;
 
 }
-.UserPostnameHrWrap{
+
+.UserPostnameHrWrap {
     width: 72%;
 }
-.userPostname{
+
+.userPostname {
     font-size: 1.6rem;
     font-weight: 550;
     margin-bottom: .4rem;
 
 }
-.PostHr{
+
+.PostHr {
     font-size: 1.4rem;
     color: gray;
 }
-.rightUPostOptions{
+
+.rightUPostOptions {
     width: 12%;
     font-size: 2.2rem;
     color: gray;
@@ -669,28 +691,32 @@ html {
     justify-content: space-between;
 }
 
-.rightMenusectionWrap{
+.rightMenusectionWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 1.6rem;
 }
-.rightRMenuWrap{
+
+.rightRMenuWrap {
     width: 35%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     /* border: .1rem solid blueviolet; */
 }
-.rmenus{
+
+.rmenus {
     font-weight: 550;
 }
-.rightUsersContainer{
+
+.rightUsersContainer {
     /* border: .1rem solid red; */
     margin-top: 1.4rem;
     font-size: 1.4rem;
 }
-.userProfileContainer{
+
+.userProfileContainer {
     width: 100%;
     /* border: .1rem solid lawngreen; */
     display: flex;
@@ -698,42 +724,52 @@ html {
     align-items: center;
     margin-bottom: 1rem;
 }
-.userpImagWrap{
+
+.userpImagWrap {
     width: 12%;
 }
-.userpImagWrap img{
+
+.userpImagWrap img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
     border: .1rem solid lightgray;
 }
-.userpname{
+
+.userpname {
     width: 85%;
     font-weight: 550;
 }
-.HomeMainPostDesc{
+
+.HomeMainPostDesc {
     padding: 1rem 1.4rem;
 }
-.HPostDecs{
+
+.HPostDecs {
     font-size: 1.4rem;
 }
-.mainPostWraper{
+
+.mainPostWraper {
     width: 100%;
     /* border: .1rem solid lightgray; */
     margin: .5rem 0;
 }
-.MainPostImageWrap{
+
+.MainPostImageWrap {
     width: 100%;
 }
-.MainPostImageWrap img{
+
+.MainPostImageWrap img {
     width: 100%;
     height: 100%;
 }
-.MainPostHrLine{
+
+.MainPostHrLine {
     border: .1rem solid lightgray;
     /* margin: 1rem 0; */
 }
-.LikeCommSharWrapper{
+
+.LikeCommSharWrapper {
     width: 80%;
     margin: auto;
     display: flex;
@@ -741,25 +777,29 @@ html {
     align-items: center;
     padding: 1.4rem 1.4rem;
 }
-.LCSWrapper{
+
+.LCSWrapper {
     /* border: .1rem solid red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
 }
-.LCSText{
+
+.LCSText {
     width: 80%;
     font-size: 1.5rem;
     color: grey;
     font-weight: 550;
 }
-.LCSIcons{
+
+.LCSIcons {
     width: 15%;
     font-size: 2rem;
     color: gray;
 }
-#logout{
+
+#logout {
     display: flex;
     gap: 1.2rem;
 }
@@ -779,6 +819,7 @@ html {
     cursor: pointer;
     height: 100vh;
 }
+
 .addPostForm {
     width: 40%;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
@@ -786,32 +827,38 @@ html {
     border-radius: 1rem;
     margin: 14rem auto;
 }
-.APHeader{
+
+.APHeader {
     display: flex;
     padding: 1.5rem;
     border-bottom: .1rem solid lightgray;
 }
-.addPostTitle{
+
+.addPostTitle {
     width: 90%;
     text-align: center;
     font-size: 2.5rem;
     font-weight: 550;
 }
-.CloseBtn{
+
+.CloseBtn {
     width: 10%;
     text-align: right;
 }
-.CloseBtn i{
+
+.CloseBtn i {
     font-size: 2.2rem;
     color: lightgray;
     cursor: pointer;
 
 }
-.AddpostMainForm{
+
+.AddpostMainForm {
     width: 100%;
     padding: 1.5rem 2rem;
 }
-.APInputField{
+
+.APInputField {
     width: 100%;
     padding: 1rem 1.5rem;
     font-size: 1.4rem;
@@ -820,7 +867,8 @@ html {
     border-radius: 1rem;
     margin-bottom: 1.4rem;
 }
-.HomeAddPostBTN{
+
+.HomeAddPostBTN {
     width: 100%;
     border: none;
     outline: none;
@@ -831,6 +879,49 @@ html {
     cursor: pointer;
     font-weight: 550;
 }
+
+/* ------------dropdown Menu of user Profile On Home Page------------ */
+
+.dropdown {
+    position: fixed;
+    display: block;
+ margin-left: -20rem;
+ margin-top: 14rem;
+   z-index: 4;
+   background-color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 22rem;
+    overflow: auto;
+    box-shadow: 0rem .8rem 1.6rem 0rem rgba(0, 0, 0, 0.2);
+    z-index: 5;
+ 
+   
+
+}
+
+.dropdown-content h3 {
+    color: black;
+    padding: 1.2rem 1.6rem;
+    text-decoration: none;
+    display: block;
+
+}
+.show {display: block;}
+
+
+
+
+
+
+
+
+
+
 
 
 

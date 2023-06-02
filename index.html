@@ -12,6 +12,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script>
+
+        // User Profile Drop down Menu
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.rightsideuserImage')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -43,11 +65,20 @@
                 <span class="rightsideicons"><i class="fa-solid fa-bars"></i></span>
                 <span class="rightsideicons"><i class="fa-brands fa-facebook-messenger"></i></span>
                 <span class="rightsideicons"><i class="fa-solid fa-bell"></i></span>
-                <span class="rightsideuserImage">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
-                        alt="">
+                <span onclick="myFunction()" class="rightsideuserImage">
+                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                        alt="">  -->User
+
+                    <!-- UserProfile Dropdown Box----->
+                    <div class="dropdown">
+                        <div id="myDropdown" class="dropdown-content">
+                            <h3 class="UProfileDropMenu" id="logout"></h3>
+                        </div>
+                    </div>
+                    <!-- UserProfile Dropdown Box  Ends----->
                 </span>
             </div>
+
         </div>
 
         <!-- <div class="mainContainer"> -->
@@ -128,7 +159,7 @@
                         <div class="sideNavName">See more</div>
                     </div>
 
-                    <div id="logout"></div>
+                    <!-- <div id="logout"></div> -->
                 </div>
             </div>
 
@@ -167,7 +198,7 @@
                                 </div>
                                 <span class="WHMTxtName">Live Video</span>
                             </div>
-                            <div class="WHmIContentWrap" onclick="on()">
+                            <div class="WHmIContentWrap" onclick="HomeAddPoston()">
                                 <div class="WHMImgConatiner">
                                     <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yC/r/a6OjkIIE-R0.png" alt="">
                                 </div>
@@ -188,8 +219,7 @@
                         <div class="PostSectionContainer">
                             <div class="postHederSection">
                                 <div class="UserpfImageWrap">
-                                    <img src=" "
-                                        alt="">
+                                    <img src=" " alt="">
                                 </div>
                                 <div class="UserPostnameHrWrap">
                                     <div class="userPostname"> </div>
@@ -205,8 +235,7 @@
                             </div>
                             <div class="mainPostWraper">
                                 <div class="MainPostImageWrap">
-                                    <img src=" "
-                                        alt="">
+                                    <img src=" " alt="">
                                 </div>
                             </div>
                             <!-- <hr class="MainPostHrLine"> -->
@@ -265,16 +294,12 @@
         </div>
         <!-- </div> -->
 
-       <!-- <img src="./images/p3.jpg" alt="">
-       <img src="./images/u3.jpg" alt=""> -->
-       
-
-        <!-- addpost  -->
+        <!---- Add Post----->
         <div id="AddPostOverlay">
             <div class="addPostForm">
                 <div class="APHeader">
                     <h2 class="addPostTitle">Create Post</h2>
-                    <h3 class="CloseBtn" onclick="off()"><i class="fa-solid fa-circle-xmark"></i></h3>
+                    <h3 class="CloseBtn" onclick="HomeAddPostoff()"><i class="fa-solid fa-circle-xmark"></i></h3>
                 </div>
                 <form action="" onsubmit="addPost(event)" class="AddpostMainForm">
                     <input type="text" id="pname" placeholder="Username" class="APInputField"><br>
@@ -286,9 +311,11 @@
                 </form>
             </div>
         </div>
-        <!-- end add post  -->
+        <!----Add Post End Here ---->
+
 
     </div>
+
 
     <script>
         window.onload = function () {
@@ -304,6 +331,7 @@
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
                 var button = ' <div class="sideNavLinkWrap"><div class="sideNavImgwrap"><img src="./images/logoutimg-removebg-preview.png" alt=""></div><div  class="sideNavName" onclick="logout()">Logout</div> </div>'
+
                 var name = `<h1  class="sideNavName">${currentUser.userName}</h1>`;
                 divfromHtml.innerHTML = name;
                 logoutDiv.innerHTML = button;
@@ -315,7 +343,7 @@
 
             // add posts
 
-            
+
             var productsFromLS = JSON.parse(localStorage.getItem("facebookPosts"))
             var divToShowAllPosts = document.getElementById("HomePostsContainer");
 
