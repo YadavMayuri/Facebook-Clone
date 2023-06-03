@@ -9,31 +9,8 @@
     <link rel="shortcut icon" href="./images/fb-favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script>
 
-        // User Profile Drop down Menu
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function (event) {
-            if (!event.target.matches('.rightsideuserImage')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                    var openDropdown = dropdowns[i];
-                    if (openDropdown.classList.contains('show')) {
-                        openDropdown.classList.remove('show');
-                    }
-                }
-            }
-        }
-    </script>
 </head>
 
 <body>
@@ -65,17 +42,9 @@
                 <span class="rightsideicons"><i class="fa-solid fa-bars"></i></span>
                 <span class="rightsideicons"><i class="fa-brands fa-facebook-messenger"></i></span>
                 <span class="rightsideicons"><i class="fa-solid fa-bell"></i></span>
-                <span onclick="myFunction()" class="rightsideuserImage">
-                    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
-                        alt="">  -->User
-
-                    <!-- UserProfile Dropdown Box----->
-                    <div class="dropdown">
-                        <div id="myDropdown" class="dropdown-content">
-                            <h3 class="UProfileDropMenu" id="logout"></h3>
-                        </div>
-                    </div>
-                    <!-- UserProfile Dropdown Box  Ends----->
+                <span class="rightsideuserImage" onClick="PrifileshowHideDiv('divMsg')">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU"
+                        alt="">
                 </span>
             </div>
 
@@ -159,7 +128,7 @@
                         <div class="sideNavName">See more</div>
                     </div>
 
-                    <!-- <div id="logout"></div> -->
+                    
                 </div>
             </div>
 
@@ -314,6 +283,43 @@
         <!----Add Post End Here ---->
 
 
+        <!-- Dropdown menu----- -->
+        <div id="divMsg">
+            <div class="dropdownProfileShortwrap">
+                <div class="drImgNameContainer">
+                    <div class="pdImagewarpper">
+                        <img src="./images/p3.jpg" alt="">
+                    </div>
+                    <span class="dpUserName">Mayuri </span>
+                </div>
+            </div>
+
+            <div class="dpMENUContainer">
+                <div class="dpbottomMenuWrap">
+                    <div class="dpBMIconWrap">
+                        <i class="fa-solid fa-gear"></i>
+                    </div>
+                    <div class="DpBMname">Settings & privacy</div>
+                </div>
+            </div>
+            <div class="dpMENUContainer">
+                <div class="dpbottomMenuWrap">
+                    <div class="dpBMIconWrap">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                    <div class="DpBMname">Display & accessibility</div>
+                </div>
+            </div>
+           <div class="dpMENUContainer">
+            <div class="dpbottomMenuWrap">
+                <div class="dpBMIconWrap">
+                    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                </div>
+                <div class="DpBMname" id="logout"></div>
+            </div>
+           </div>
+        </div>
+        <!-- dropdown menu ends------ -->
     </div>
 
 
@@ -330,7 +336,7 @@
                 // var h1=document.createElement("h1");
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
-                var button = ' <div class="sideNavLinkWrap"><div class="sideNavImgwrap"><img src="./images/logoutimg-removebg-preview.png" alt=""></div><div  class="sideNavName" onclick="logout()">Logout</div> </div>'
+                var button = '<div class="DpBMname" onclick="logout()">Logout</div>'
 
                 var name = `<h1  class="sideNavName">${currentUser.userName}</h1>`;
                 divfromHtml.innerHTML = name;
@@ -403,6 +409,21 @@
             localStorage.removeItem("faceBookCurrentUser")
             window.location.reload()
             window.location.href = './login.html'
+        }
+    </script>
+
+    <script>
+        function PrifileshowHideDiv(ele) {
+            var srcElement = document.getElementById(ele);
+            if (srcElement != null) {
+                if (srcElement.style.display == "block") {
+                    srcElement.style.display = 'none';
+                }
+                else {
+                    srcElement.style.display = 'block';
+                }
+                return false;
+            }
         }
     </script>
 
