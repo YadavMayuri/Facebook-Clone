@@ -475,7 +475,7 @@ html {
     align-items: center;
     gap: 1.4rem;
     cursor: pointer;
-    padding: .8rem;
+    padding: .7rem;
     border-radius: 1rem;
     margin-bottom: .2rem;
 }
@@ -485,7 +485,7 @@ html {
 }
 
 .sideNavImgwrap {
-    width: 13%;
+    width: 14%;
 }
 
 .sideNavImgwrap img {
@@ -496,8 +496,9 @@ html {
 
 .sideNavName {
     font-size: 1.5rem;
-    font-weight: 550;
+    font-weight: normal;
     letter-spacing: .01rem;
+
 }
 
 .welcomefb {
@@ -739,7 +740,8 @@ html {
 
 .userpname {
     width: 85%;
-    font-weight: 550;
+    font-weight: 500;
+    font-size: 1.5rem;
 }
 
 .HomeMainPostDesc {
@@ -785,6 +787,7 @@ html {
     justify-content: space-between;
     align-items: center;
     gap: 1.5rem;
+    cursor: pointer;
 }
 
 .LCSText {
@@ -929,10 +932,11 @@ html {
 .dpUserName {
     width: 80%;
     font-size: 1.6rem;
-    font-weight: 550;
+    font-weight: 500;
 }
 .dpMENUContainer{
     /* margin-top: 1.4rem; */
+    width: 100%;
     cursor: pointer;
     padding: 1rem;
 }

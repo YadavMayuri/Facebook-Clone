@@ -310,12 +310,12 @@
                     <div class="DpBMname">Display & accessibility</div>
                 </div>
             </div>
-           <div class="dpMENUContainer">
+           <div id="logout">
             <div class="dpbottomMenuWrap">
                 <div class="dpBMIconWrap">
                     <i class="fa-solid fa-arrow-right-from-bracket"></i>
                 </div>
-                <div class="DpBMname" id="logout"></div>
+                <div class="DpBMname" ></div>
             </div>
            </div>
         </div>
@@ -336,7 +336,7 @@
                 // var h1=document.createElement("h1");
                 // h1.innerText="Mayuri"
                 // divfromHtml.append(h1)
-                var button = '<div class="DpBMname" onclick="logout()">Logout</div>'
+                var button = ' <div class="dpMENUContainer" onclick="logout()"> <div class="dpbottomMenuWrap"><div class="dpBMIconWrap"><i class="fa-solid fa-arrow-right-from-bracket"></i></div><div class="DpBMname" >Logout</div></div></div>'
 
                 var name = `<h1  class="sideNavName">${currentUser.userName}</h1>`;
                 divfromHtml.innerHTML = name;
