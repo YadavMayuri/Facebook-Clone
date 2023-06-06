@@ -370,6 +370,12 @@ html {
     font-size: 2.2rem;
     color: gray;
     cursor: pointer;
+    padding: 1.2rem 2.8rem;
+}
+
+.middleContentIcons:hover {
+    background-color: #f0f2f5;
+    border-radius: 1rem;
 }
 
 .middleIconsContainer {
@@ -432,7 +438,7 @@ html {
     justify-content: space-between;
     height: 100%;
     background-color: #f0f2f5;
-    margin-top: 5%;
+    margin-top: 5.5%;
     padding: .5rem 1.6rem;
 }
 
@@ -934,56 +940,154 @@ html {
     font-size: 1.6rem;
     font-weight: 500;
 }
-.dpMENUContainer{
+
+.dpMENUContainer {
     /* margin-top: 1.4rem; */
     width: 100%;
     cursor: pointer;
     padding: 1rem;
 }
-.dpMENUContainer:hover{
-    background-color:#f0f2f5;
+
+.dpMENUContainer:hover {
+    background-color: #f0f2f5;
 }
-.dpbottomMenuWrap{
+
+.dpbottomMenuWrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.dpBMIconWrap{
+
+.dpBMIconWrap {
     width: 13%;
     text-align: center;
     background-color: #e1e3e7;
     border-radius: 100%;
 }
-.dpBMIconWrap i{
+
+.dpBMIconWrap i {
     font-size: 2rem;
     padding: .8rem;
 }
-.DpBMname{
+
+.DpBMname {
     width: 80%;
     /* border: .1rem solid blue; */
     font-size: 1.6rem;
 }
 
 
+/* ------------------Profile page-------------------------- */
 
 
+.mainProfileContainer {
+    margin-top: 5.5%;
+    border: .1rem solid black;
+}
 
+.profilemiddleContentContainer {
+    width: 70%;
+    margin: auto;
+    /* border: .1rem solid red; */
+}
 
+.profileCover {
+    width: 100%;
+}
 
+.profileCover img {
+    width: 100%;
+    height: 36rem;
+    border-bottom-left-radius: 1.4rem;
+    border-bottom-right-radius: 1.4rem;
 
+}
 
+.prImgNameOptWrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    /* border: .1rem solid red; */
+    margin: auto;
+}
 
+.leftPrImgWrap {
+    /* border: .1rem solid palegreen; */
+    width: 23%;
+    position: relative;
+    z-index: 2;
+    margin-top: -10rem;
+}
 
+.rightNameOptWrap {
+    /* border: .1rem solid palevioletred; */
+    width: 73%;
+    display: flex;
+    justify-content: space-between;
+    /* border: .1rem solid blue; */
+    align-items: flex-end;
+    margin-bottom: 1rem;
+}
 
+.primgContainer {
+    width: 100%;
+}
 
+.primgContainer img {
+    width: 100%;
+    /* height: 100%; */
+    border-radius: 100%;
+    object-fit: cover;
+    border: .5rem solid white;
+    aspect-ratio: 3/3;
+}
 
+.PrRightOptionWrap {
+    /* border: .1rem solid peru; */
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
 
+.UserPrNameTxt {
+    width: 55%;
+}
 
+.UserPrName {
+    font-size: 3.2rem;
+    letter-spacing: .02rem;
+    font-weight: 550;
+}
 
+.UPrBtn {
+    padding: .8rem 1.4rem;
+    border: none;
+    outline: none;
+    border-radius: .6rem;
+    font-size: 1.4rem;
+    display: flex;
+    gap: .6rem;
+    font-weight: 550;
+    background-color: #e1e3e7;
+    cursor: pointer;
+}
 
+.PrRightOptionWrap button:nth-child(1) {
+    background-color: #1877f2;
+    color: white;
+    cursor: pointer;
+}
 
-
-
-
-
-
+.camerawrap {
+    width: 25%;
+    background-color: #e1e3e7;
+    /* border: .1rem solid blueviolet; */
+    border-radius: 100%;
+    padding: 1rem .2rem;
+    font-size: 2rem;
+    position: relative;
+    margin-top: -5rem;
+    text-align: center;
+    margin-left: 13rem;
+    cursor: pointer;
+}
