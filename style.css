@@ -1135,10 +1135,26 @@ html {
 }
 
 
-
-
-
-
+/* edit profile overlay----------------------- */
+#editProfileOverlay{
+    position: fixed;
+    /* display: none; */
+    top: 0%;
+    left: 0%;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(248, 246, 246, 0.744);
+    z-index: 2;
+    cursor: pointer;
+    height: 100vh;
+}
+.editProfilFormWrap{
+    width: 40%;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 3px 8px;
+    background-color: #fff;
+    border-radius: 1rem;
+    margin: 14rem auto;
+}
 
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +10,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/174a9c1444.js" crossorigin="anonymous"></script>
 </head>
-<body >
+
+<body>
     <div id="profileScreen">
         <div class="navbarContainer">
             <div class="leftNavbar">
@@ -51,7 +53,8 @@
 
                 <div class="PrCoverPrImageNameWrapper">
                     <div class="profileCover">
-                        <img src="https://img.freepik.com/premium-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-p_1258-114033.jpg?w=2000" alt="">
+                        <img src="https://img.freepik.com/premium-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-p_1258-114033.jpg?w=2000"
+                            alt="">
                     </div>
                     <div class="prImgNameOptWrapper">
                         <div class="leftPrImgWrap">
@@ -68,8 +71,12 @@
                                 <p class="UserPrName">Mayuri </p>
                             </div>
                             <div class="PrRightOptionWrap">
-                                <button class="UPrBtn"><span class="UPRBtnIcon"><i class="fa-solid fa-plus"></i></span><span class="UPrBtnName">Add to story</span></button>
-                                <button class="UPrBtn"><span class="UPRBtnIcon"><i class="fa-solid fa-pen"></i></span><span class="UPrBtnName">Edit profile</span></button>
+                                <button class="UPrBtn"><span class="UPRBtnIcon"><i
+                                            class="fa-solid fa-plus"></i></span><span class="UPrBtnName">Add to
+                                        story</span></button>
+                                <button class="UPrBtn"><span class="UPRBtnIcon"><i
+                                            class="fa-solid fa-pen"></i></span><span class="UPrBtnName">Edit
+                                        profile</span></button>
 
                             </div>
 
@@ -80,7 +87,7 @@
                     <div class="UpMenuListWrapper">
                         <div class="UPMenusWrap">
                             <div class="upSingleMenu">posts </div>
-                            <div class="upSingleMenu">about  </div>
+                            <div class="upSingleMenu">about </div>
                             <div class="upSingleMenu">friends </div>
                             <div class="upSingleMenu">photos </div>
                             <div class="upSingleMenu">videos </div>
@@ -98,7 +105,45 @@
             </div>
         </div>
 
+
+        <!-- edit profile overlay -->
+        <div id="editProfileOverlay">
+            <div class="editProfilFormWrap">
+                
+            </div>
+
+        </div>
+        <!-- edit profile overlay ends -->
+
     </div>
-    
+
+    <script>
+        window.onload = function () {
+            // alert("working")
+            var currentUser = JSON.parse(localStorage.getItem("faceBookCurrentUser"))
+            // console.log(currentUser,"current user");
+            if (!!currentUser) {
+                // alert(currenUser,"username")
+                var logoutDiv = document.getElementById("logout")
+                var divfromHtml = document.getElementById("switch");
+                // console.log(divfromHtml, "divfromhtml");
+                // var h1=document.createElement("h1");
+                // h1.innerText="Mayuri"
+                // divfromHtml.append(h1)
+                var button = ' <div class="dpMENUContainer" onclick="logout()"> <div class="dpbottomMenuWrap"><div class="dpBMIconWrap"><i class="fa-solid fa-arrow-right-from-bracket"></i></div><div class="DpBMname" >Logout</div></div></div>'
+
+                var name = `<h1  class="sideNavName">${currentUser.userName}</h1>`;
+                divfromHtml.innerHTML = name;
+                logoutDiv.innerHTML = button;
+            }
+            //  else {
+            //     alert("current user absent")
+            // }
+        }
+    </script>
+
+
+    <script src="main.js"></script>
 </body>
+
 </html>
