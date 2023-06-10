@@ -982,7 +982,9 @@ html {
 
 .mainProfileContainer {
     margin-top: 5.5%;
-    border: .1rem solid black;
+    /* border: .1rem solid black; */
+    box-shadow: rgba(0, 0, 0, 0.40) 0rem .3rem .8rem;
+
 }
 
 .profilemiddleContentContainer {
@@ -1100,7 +1102,7 @@ html {
     align-items: center;
     justify-content: space-between;
     border-top: .1rem solid lightgray;
-    padding: 1rem 0;
+    padding: .6rem 0;
 }
 .UPMenusWrap{
     width: 70%;
@@ -1125,8 +1127,12 @@ html {
     color: #65676B;
     font-weight: 550;
     text-transform: capitalize;
+    padding: 1.6rem 1.4rem;
+    border-radius: 1rem;
 }
-
+.upSingleMenu:hover{
+    background-color: #e1e3e7;
+}
 
 
 
