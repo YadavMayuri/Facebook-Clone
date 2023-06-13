@@ -59,7 +59,7 @@
                     <div class="prImgNameOptWrapper">
                         <div class="leftPrImgWrap">
                             <div class="primgContainer">
-                                <img src="./images/p3.jpg" alt="">
+                                <img src="./images/default-user-image.png" alt="">
                             </div>
                             <div class="camerawrap">
                                 <i class="fa-solid fa-camera"></i>
@@ -74,7 +74,7 @@
                                 <button class="UPrBtn"><span class="UPRBtnIcon"><i
                                             class="fa-solid fa-plus"></i></span><span class="UPrBtnName">Add to
                                         story</span></button>
-                                <button class="UPrBtn"><span class="UPRBtnIcon"><i
+                                <button class="UPrBtn"  onclick="EditProfileon()"><span class="UPRBtnIcon"><i
                                             class="fa-solid fa-pen"></i></span><span class="UPrBtnName">Edit
                                         profile</span></button>
 
@@ -109,7 +109,36 @@
         <!-- edit profile overlay -->
         <div id="editProfileOverlay">
             <div class="editProfilFormWrap">
-                
+                <div class="EditPrAndCloseBtnWrap">
+                    <div class="EditPrTitle">Edit profile</div>
+                    <div class="editPrCloseButtonWrap" onclick="EditProfileoff()"><i class="fa-solid fa-xmark"></i></div>
+                </div>
+
+                <div class="EditPrAndCoverPicWrapper">
+                    <div class="ProfilePictureTextWrap">Profile picture</div>
+
+                    <div class="ProfilePhotoWrap">
+                        <div class="ProfilePhotoDisplayImg">
+                            <img src="./images/default-user-image.png" alt="" class="">
+                        </div>
+                    </div>
+
+                    <div class="EditPrTxtInputAndBtnWrap">
+                        <input type="text" placeholder="Enter Profile Image" class="EditPrInptField">
+                        <button class="EditPrButtonWrap">Edit</button>
+                    </div>
+
+                    <!-- ------Cover photo--------- -->
+                    <div class="coverphotoTitle">Cover Photo</div>
+                    <div class="CoverPhotoDisplayImg">
+                        <img src="https://img.freepik.com/premium-photo/abstract-luxury-plain-blur-grey-black-gradient-used-as-background-studio-wall-display-your-p_1258-114033.jpg?w=2000" alt="" class="">
+                    </div>
+                    <div class="EditPrTxtInputAndBtnWrap">
+                        <input type="text" placeholder="Enter Cover Photo" class="EditPrInptField">
+                        <button class="EditPrButtonWrap">Edit</button>
+                    </div>
+
+                </div>
             </div>
 
         </div>
@@ -118,28 +147,28 @@
     </div>
 
     <script>
-        window.onload = function () {
-            // alert("working")
-            var currentUser = JSON.parse(localStorage.getItem("faceBookCurrentUser"))
-            // console.log(currentUser,"current user");
-            if (!!currentUser) {
-                // alert(currenUser,"username")
-                var logoutDiv = document.getElementById("logout")
-                var divfromHtml = document.getElementById("switch");
-                // console.log(divfromHtml, "divfromhtml");
-                // var h1=document.createElement("h1");
-                // h1.innerText="Mayuri"
-                // divfromHtml.append(h1)
-                var button = ' <div class="dpMENUContainer" onclick="logout()"> <div class="dpbottomMenuWrap"><div class="dpBMIconWrap"><i class="fa-solid fa-arrow-right-from-bracket"></i></div><div class="DpBMname" >Logout</div></div></div>'
+        // window.onload = function () {
+        //     // alert("working")
+        //     var currentUser = JSON.parse(localStorage.getItem("faceBookCurrentUser"))
+        //     // console.log(currentUser,"current user");
+        //     if (!!currentUser) {
+        //         // alert(currenUser,"username")
+        //         var logoutDiv = document.getElementById("logout")
+        //         var divfromHtml = document.getElementById("switch");
+        //         // console.log(divfromHtml, "divfromhtml");
+        //         // var h1=document.createElement("h1");
+        //         // h1.innerText="Mayuri"
+        //         // divfromHtml.append(h1)
+        //         var button = ' <div class="dpMENUContainer" onclick="logout()"> <div class="dpbottomMenuWrap"><div class="dpBMIconWrap"><i class="fa-solid fa-arrow-right-from-bracket"></i></div><div class="DpBMname" >Logout</div></div></div>'
 
-                var name = `<h1  class="sideNavName">${currentUser.userName}</h1>`;
-                divfromHtml.innerHTML = name;
-                logoutDiv.innerHTML = button;
-            }
-            //  else {
-            //     alert("current user absent")
-            // }
-        }
+        //         var name = `<h1  class="sideNavName">${currentUser.userName}</h1>`;
+        //         divfromHtml.innerHTML = name;
+        //         logoutDiv.innerHTML = button;
+        //     }
+        //     //  else {
+        //     //     alert("current user absent")
+        //     // }
+        // }
     </script>
 
 

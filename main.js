@@ -136,6 +136,16 @@ function addPost(event) {
 
 
 
+// edit profile popup
+
+function EditProfileon() {
+    document.getElementById("editProfileOverlay").style.display = "block";
+}
+
+function EditProfileoff() {
+    document.getElementById("editProfileOverlay").style.display = "none";
+}
+
 
 
 
